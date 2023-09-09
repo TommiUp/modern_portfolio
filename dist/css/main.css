@@ -208,11 +208,11 @@ main .icons {
 
 main .icons a {
   padding: 0.4rem;
+  transition: all 0.5s ease-out;
 }
 
 main .icons a:hover {
   color: #eece1a;
-  transition: all 0.5s ease-out;
 }
 
 main#home {
@@ -226,7 +226,8 @@ main#home h1 {
 .about-info {
   display: grid;
   grid-gap: 30px;
-  grid-template-areas: 'bioimage bio bio' 'job1 job2 job3';
+  grid-template-areas: 'bioimage bio bio'
+    'job1 job2 job3';
   grid-template-columns: repeat(3, 1fr);
 }
 
@@ -390,7 +391,11 @@ main#home h1 {
   }
 
   .about-info {
-    grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
+    grid-template-areas: 'bioimage'
+      'bio'
+      'job1'
+      'job2'
+      'job3';
     grid-template-columns: 1fr;
   }
 
@@ -400,8 +405,17 @@ main#home h1 {
 }
 
 @media screen and (max-width: 500px) {
-  main#home h1 {
+  main {
+    padding: 2rem;
+  }
+
+  main #home h1 {
     margin-top: 10vh;
+  }
+
+  main .lg-heading {
+    margin-top: 1rem;
+    font-size: 5rem;
   }
 
   .projects {
