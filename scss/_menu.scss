@@ -15,7 +15,7 @@
         @include easeOut;
     }
 
-    // Rotate Into X With Menu Lines
+    // Rotate Into X with Menu Lines
     &.close {
         transform: rotate(180deg);
 
@@ -35,6 +35,7 @@
             &:nth-child(3) {
                 transform: rotate(-45deg) translate(7px, -6px);
             }
+
         }
     }
 }

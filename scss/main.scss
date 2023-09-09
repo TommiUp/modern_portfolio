@@ -58,10 +58,10 @@ main {
 
         a {
             padding: 0.4rem;
-            @include easeOut;
 
             &:hover {
                 color: $secondary-color;
+                @include easeOut();
             }
         }
     }
@@ -96,15 +96,15 @@ main {
     }
 
     .job-1 {
-        grid-area: job1;
+        grid-area: job1
     }
 
     .job-2 {
-        grid-area: job2;
+        grid-area: job2
     }
 
     .job-3 {
-        grid-area: job3;
+        grid-area: job3
     }
 
     .job {
@@ -145,6 +145,7 @@ main {
         border: 3px #fff solid;
         padding: 1.5rem 2.5rem;
         margin-bottom: 3rem;
+
         @include easeOut;
 
         &:hover {
